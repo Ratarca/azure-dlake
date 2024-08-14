@@ -6,7 +6,7 @@ Data Plataform built on Azure provider.
 Below we have a big picture about data platform. 
 In this case we use a Delta Lake where backbone services deployed on azure and our processing data engine is a databricks data platform.
 
-<img src="docs/asset/img/delta-lake.png" width="500"/>
+<img src="docs/asset/img/delta-lake.png" width="500" height="450"/>
 
 
 ## Modules
