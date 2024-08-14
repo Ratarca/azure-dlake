@@ -7,10 +7,12 @@ Below we have a big picture about data platform.
 In this case we use a Delta Lake where backbone services deployed on azure and our processing data engine is a databricks data platform.
 
 <img src="docs/asset/img/delta-lake.png" width="128"/>
+
+
 ## Modules
 
 Backbone: Service Principal, Resource Groups, Storage, Key Vault  
-Databricks: Databricks workspace, cluster, unity
+Databricks: Databricks workspace, cluster, unity...
 
 ## Roadmap
 
