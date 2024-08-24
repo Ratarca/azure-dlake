@@ -1,14 +1,19 @@
 
 # Module
-Use this module to setup a storage services.
+Use this module to setup a storage services.<br>
+
+Here we create a resource_group storage with storage_account and 5 containers.
+These containers are : Sensitive, stage, bronze, silver and gold.
+
+<img src=".../docs/asset/img/module-storage-output.png" width="500" height="450"/>
 
 # Usage
 
 ```hcl
 
 module "XPTO_STORAGE"{
-    company = 0
-    env = 0
+    company = "CompanyName"
+    env = "DEV|PRD"
 }
 
 ```
