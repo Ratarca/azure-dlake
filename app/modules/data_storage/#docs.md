@@ -15,7 +15,6 @@ module "XPTO_STORAGE"{
     company = "CompanyName"
     env = "DEV|PRD"
 }
-
 ```
 
 ### Notes about replication storage
