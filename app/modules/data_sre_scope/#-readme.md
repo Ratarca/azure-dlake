@@ -1,10 +1,16 @@
 # Azure Management Group and Resource Groups Module
 
-This Terraform module sets up a management group structure with the following:
+This module used to build scope definitions it is necessary to define domains and services we will build.
 - A parent management group named "DataCompany"
 - A child management group named "ItDataPlatform"
 - A subscription called "developer" associated with the "ItDataPlatform" management group
 - Resource groups under the developer subscription: `shared`, `data_engineer`, `analytics`, `sre`, and `dataviz`.
+
+## Logic
+
+- Set the provider and their subscriptions
+- Create management-group
+- Create 
 
 ## Usage
 

@@ -1,3 +1,6 @@
+ 
+
+# Management Groups
 resource "azurerm_management_group" "data_company"{
 display_name = var.data_company_name
 name = var.data_company_id
@@ -14,6 +17,8 @@ resource "azurerm_management_group_subscription_association" "it_data_plataform_
     management_group_id = azurerm_management_group.it_data_plataform.id
     subscription_id = "${var.prefix}-${var.subscription_it_data_plataform_id}"
 }
+
+# Subscriptions and Policies
 
 
 # Resources Groups : data_sre, shared, basic, data_engineer, data_science

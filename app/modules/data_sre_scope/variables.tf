@@ -1,4 +1,9 @@
 # Environment
+variable "env"{
+    description = "The environment"
+    type = string
+    default = "dev"
+}
 variable "prefix"{
     description = "value"
     type = string
