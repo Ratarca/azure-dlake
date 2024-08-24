@@ -2,19 +2,19 @@
 variable "company" {
     description = "value"
     type = string
-    default = "dummy"
+    default = "wonka"
 }
 
 variable "env" {
     description = "value"
     type = string
-    default = "dummy"
+    default = "dev"
 }
 
 variable "location" {
     description = "value"
     type = string
-    default = "dummy"
+    default = "West US"
 }
 
 ## Backbone config
@@ -26,7 +26,12 @@ variable "account_tier" {
 
 variable "tags" {
     description = "value"
-    type = map
-    default = "dummy"
+    type = map(string)
+    default = {
+        owner = "data-plataform"
+        service = "storage"
+        project = "dlake-azure"
+        creator = "RATARCA"
+    }
 }
 
