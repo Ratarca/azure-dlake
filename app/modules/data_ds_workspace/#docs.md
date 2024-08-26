@@ -1,6 +1,6 @@
 # Module
 
-Use this module to setup a machine learning workspace on databricks.
+Use this module to setup a simple azure machine learning 'AML' workspace.
 There are a awesome environment to build your machine learning models.
 
 
@@ -23,6 +23,7 @@ We can add a VNet with private link to another people acess and use firewall.
 
 
 ## References
+- https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/machine_learning_workspace.html
 - https://learn.microsoft.com/en-us/azure/machine-learning/quickstart-create-resources?view=azureml-api-2
 - https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-explore-data?view=azureml-api-2
 - https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-management-and-deployment?view=azureml-api-2
