@@ -1,6 +1,3 @@
-provider "azurerm" {
-    features = {}
-}
 
 # Set the Azure Provider source and version being used
 terraform {
