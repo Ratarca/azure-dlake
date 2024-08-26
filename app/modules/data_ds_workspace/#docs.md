@@ -6,7 +6,7 @@ There are a awesome environment to build your machine learning models.
 
 The machine learning workspace allow us to full cyle on MLOps with prepare data, train model, deploy, monitoring and more...
 
-<img src="/docs/asset/img/datascience-lab.png" width="500" height="650"/>
+<img src="/docs/asset/img/datascience-lab.png" width="650" height="450"/>
 
 ## Usage
 
