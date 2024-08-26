@@ -19,7 +19,6 @@ is_hns_enabled = true
 }
 
 
-
 # Containers : sensitive, stage, bronze, silver and gold
 resource "azurerm_storage_container" "sensitive"{
     name = "${var.company}-${var.env}-dlake-sensitive"

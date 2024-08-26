@@ -14,7 +14,7 @@ variable "env" {
 variable "location" {
     description = "Azure location service"
     type = string
-    default = "West US"
+    default = "East US"
 }
 
 ## Backbone config
