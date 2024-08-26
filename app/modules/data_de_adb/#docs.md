@@ -3,6 +3,13 @@
 
 # About Setup logic
 
+- Databricks Workspace:
+- Databricks Group
+- Databricks cluster policy
+- Databricks users
+- Databricks SQL Endpoint
+- Networking
+- Unity Catalog
 - Standard : Resources dont required admin privileges like 
 
 

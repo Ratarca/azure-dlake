@@ -12,7 +12,7 @@ In this case we use a Delta Lake where backbone services deployed on azure and o
 ## Modules
 
 data_storage: Account storage services.
-data_de_databricks : Data engineer's databricks resources.
+data_de_adb : The data engineer's azure databricks services.
 data_de_adf : Data engineer's azure data factory.
 data_ds_labs: Data science's machine learning workspace.
 data_sre_backbone : Scope, groups and RBAC.
