@@ -1,3 +1,5 @@
-module "resource_organization"{
-    source = "./modules/data_sre"
+module "dlake_storage"{
+    source = "./modules/data_storage"
+    env = "dev"
+    company = "wonka"
 }
