@@ -34,3 +34,4 @@ In this case we use a Delta Lake where backbone services deployed on azure and o
 
 - [How to setup the azure backend](https://developer.hashicorp.com/terraform/language/settings/backends/azurerm)
 - [Workflow on github actions](https://github.com/hashicorp/setup-terraform)
+- [Workflow github syntax](https://github.com/marketplace/actions/hashicorp-setup-terraform)
