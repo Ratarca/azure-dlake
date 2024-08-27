@@ -4,7 +4,7 @@ variable "env"{
     default = "dev"
 }
 
-variable "company_name"{
+variable "company"{
     description = "value"
     type = string
     default = "dev"

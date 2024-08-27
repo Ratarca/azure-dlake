@@ -1,12 +1,12 @@
 # Resource Group
 resource "azurerm_resource_group" "ds_workspace_aml"{
-    name = "${var.env}-${var.company_name}-aml-station"
+    name = "${var.env}-${var.company}-aml-station"
     location = var.location
 }
 
 # Application Insights
 resource "azurerm_application_insights" "aml_ai" {
-    name                = "${var.env}-${var.company_name}-${random_string.postfix.result}"
+    name                = "${var.env}-${var.company}-${random_string.postfix.result}"
     location            = azurerm_resource_group.ds_workspace_aml.location
     resource_group_name = azurerm_resource_group.ds_workspace_aml.name
     application_type    = "web"
@@ -14,7 +14,7 @@ resource "azurerm_application_insights" "aml_ai" {
 
 # Key Vault
 resource "azurerm_key_vault" "aml_kv" {
-    name                = "${var.env}-${var.company_name}-kv-${random_string.postfix.result}"
+    name                = "${var.env}-${var.company}-kv-${random_string.postfix.result}"
     location            = azurerm_resource_group.ds_workspace_aml.location
     resource_group_name = azurerm_resource_group.ds_workspace_aml.name
     tenant_id           = data.azurerm_client_config.current.tenant_id
@@ -34,7 +34,7 @@ resource "azurerm_container_registry" "aml_acr" {
 
 # ML Workspace
 resource "azurerm_machine_learning_workspace" "aml_ws" {
-    name                    = "${var.env}-${var.company_name}-ws-${random_string.postfix.result}"
+    name                    = "${var.env}-${var.company}-ws-${random_string.postfix.result}"
     friendly_name           = 0 #var.workspace_display_name
     location                = azurerm_resource_group.ds_workspace_aml.location
     resource_group_name     = azurerm_resource_group.ds_workspace_aml.name
