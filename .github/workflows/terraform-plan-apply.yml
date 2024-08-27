@@ -45,7 +45,7 @@ jobs:
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: terraform plan
+      run: terraform plan -out=tfplan
       working-directory: ./app
 
      # On push to "master", build or change infrastructure according to Terraform configuration files
