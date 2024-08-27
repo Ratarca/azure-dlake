@@ -52,3 +52,7 @@ jobs:
     - name: Terraform Apply
       run: terraform apply tfplan
       working-directory: ./app
+    
+    - name: Terraform Destroy
+      run: terraform destroy
+      working-directory: ./app
