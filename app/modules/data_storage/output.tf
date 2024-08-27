@@ -33,7 +33,7 @@ output "bronze_container_name" {
 }
 
 output "bronze_container_id" {
-    value = azurerm_storage_container.brnze.id
+    value = azurerm_storage_container.bronze.id
 }
 
 ## Silver
