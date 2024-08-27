@@ -7,7 +7,7 @@ tags = var.tags
 
 # Storage Account
 resource "azurerm_storage_account" "data_plataform_dlake_storage"{
-name = "${var.company}Dlake"
+name = "${var.company}dlake"
 resource_group_name = azurerm_resource_group.storage.name
 location = var.location
 account_tier = var.account_tier
