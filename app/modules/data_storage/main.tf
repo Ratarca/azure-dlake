@@ -21,31 +21,31 @@ is_hns_enabled = true
 
 # Containers : sensitive, stage, bronze, silver and gold
 resource "azurerm_storage_container" "sensitive"{
-    name = "${var.company}-${var.env}-dlake-sensitive"
+    name = "${var.env}-sensitive"
     storage_account_name = azurerm_storage_account.data_plataform_dlake_storage.name
     container_access_type = "private"
 }
 
 resource "azurerm_storage_container" "stage"{
-    name = "${var.company}-${var.env}-dlake-stage"
+    name = "${var.env}-stage"
     storage_account_name = azurerm_storage_account.data_plataform_dlake_storage.name
     container_access_type = "private"
 }
 
 resource "azurerm_storage_container" "bronze"{
-    name = "${var.company}-${var.env}-dlake-bronze"
+    name = "${var.env}-bronze"
     storage_account_name = azurerm_storage_account.data_plataform_dlake_storage.name
     container_access_type = "private"
 }
 
 resource "azurerm_storage_container" "silver"{
-    name = "${var.company}-${var.env}-dlake-silver"
+    name = "${var.env}-silver"
     storage_account_name = azurerm_storage_account.data_plataform_dlake_storage.name
     container_access_type = "private"
 }
 
 resource "azurerm_storage_container" "gold"{
-    name = "${var.company}-${var.env}-dlake-gold"
+    name = "${var.env}-gold"
     storage_account_name = azurerm_storage_account.data_plataform_dlake_storage.name
     container_access_type = "private"
 }
