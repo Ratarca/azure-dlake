@@ -10,6 +10,7 @@ resource "azurerm_machine_learning_compute_instance" "ml_computing_main" {
   name                          = "${random_string.ci_prefix.result}instance"
   machine_learning_workspace_id = azurerm_machine_learning_workspace.aml_ws.id
   virtual_machine_size          = "STANDARD_DS2_V2"
+  location = var.location
   # authorization_type
   # subnet_resource_id --> need azurerm_virtual_network + azurerm_subnet
   # ssh
