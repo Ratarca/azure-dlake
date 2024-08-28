@@ -39,8 +39,19 @@ In this case we use a Delta Lake where backbone services deployed on azure and o
 
 ## Reference
 
+- Architecture
+    - [Lake house](https://learn.microsoft.com/pt-br/azure/databricks/lakehouse/)
+    - [Data Mesh](https://www.datamesh-architecture.com/#mesh)
 
-- Unity Catalog
+- Azure
+    - [RBAC](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview)
+    - [Network](https://learn.microsoft.com/en-us/azure/networking/fundamentals/networking-overview)
+    - [Azure Lighthouse](https://learn.microsoft.com/en-us/azure/lighthouse/overview)
+    - [Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction)
+    - [Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/introduction)
+    - [Event Hub](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-features)
+
+- Databricks Unity Catalog
     - [Unity Setup](https://docs.databricks.com/en/data-governance/unity-catalog/get-started.html)
     - [Unity Catalog best practices](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/best-practices)
     - [Unity Catalog : Playlist dados em acao](https://www.youtube.com/watch?v=koylfcfRrJU&t=3s)
