@@ -21,6 +21,11 @@ module "ds_workstation"{
 ## Improvements
 We can add a VNet with private link to another people acess and use firewall.
 
+---
+
+# [Home](https://github.com/Ratarca/azure-dlake/tree/main)
+
+---
 
 ## References
 - https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/machine_learning_workspace.html

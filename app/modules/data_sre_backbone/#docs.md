@@ -30,3 +30,7 @@ module "azure_management_structure" {
     Project     = "DataPlatform"
   }
 }
+
+---
+
+# [Home](https://github.com/Ratarca/azure-dlake/tree/main)

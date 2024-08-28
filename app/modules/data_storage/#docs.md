@@ -24,3 +24,7 @@ module "XPTO_STORAGE"{
 - RA-GRS: Provides read access to the secondary region.
 - GZRS: Combines ZRS and GRS for high availability and disaster recovery.
 - RA-GZRS: Offers the highest level of redundancy with read access to the secondary region.
+
+---
+
+# [Home](https://github.com/Ratarca/azure-dlake/tree/main)
