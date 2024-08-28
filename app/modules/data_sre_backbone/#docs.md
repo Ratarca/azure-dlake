@@ -30,6 +30,7 @@ module "azure_management_structure" {
     Project     = "DataPlatform"
   }
 }
+```
 
 ---
 
