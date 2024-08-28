@@ -32,17 +32,13 @@ In this case we use a Delta Lake where backbone services deployed on azure and o
 
 ## Deploy
 
-- [How to setup the azure backend](https://developer.hashicorp.com/terraform/language/settings/backends/azurerm)
-- [Workflow on github actions](https://github.com/hashicorp/setup-terraform)
-- [Workflow github syntax](https://github.com/marketplace/actions/hashicorp-setup-terraform)
-- [Workflow git actions TF V3](https://github.com/hashicorp/setup-terraform/tree/v3/)
+Instructions to deploy services
 
 ## Reference
 
 - Architecture
     - [Lake house](https://learn.microsoft.com/pt-br/azure/databricks/lakehouse/)
     - [Data Mesh](https://www.datamesh-architecture.com/#mesh)
-
 - Azure
     - [RBAC](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview)
     - [Network](https://learn.microsoft.com/en-us/azure/networking/fundamentals/networking-overview)
@@ -50,7 +46,11 @@ In this case we use a Delta Lake where backbone services deployed on azure and o
     - [Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction)
     - [Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/introduction)
     - [Event Hub](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-features)
-
+- Terraform
+    - [How to setup the azure backend](https://developer.hashicorp.com/terraform/language/settings/backends/azurerm)
+    - [Workflow git actions TF V3](https://github.com/hashicorp/setup-terraform/tree/v3/)
+- GitActions
+    - [Workflow on github actions](https://github.com/hashicorp/setup-terraform)
 - Databricks Unity Catalog
     - [Unity Setup](https://docs.databricks.com/en/data-governance/unity-catalog/get-started.html)
     - [Unity Catalog best practices](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/best-practices)
