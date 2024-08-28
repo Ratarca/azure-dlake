@@ -36,3 +36,6 @@ In this case we use a Delta Lake where backbone services deployed on azure and o
 - [Workflow on github actions](https://github.com/hashicorp/setup-terraform)
 - [Workflow github syntax](https://github.com/marketplace/actions/hashicorp-setup-terraform)
 - [Workflow git actions TF V3](https://github.com/hashicorp/setup-terraform/tree/v3/)
+
+## Reference
+- [Unity Catalog best practices](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/best-practices)
