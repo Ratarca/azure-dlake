@@ -5,7 +5,7 @@ Data Plataform built on Azure provider.
 
 # Architecture: Big Picture
 Below we have a big picture about data platform. <br>
-In this case we use a Delta Lake where backbone services deployed on azure and our processing data engine is a databricks data platform.  <br>
+In this case we use a Delta Lake where backbone services deployed on azure and our processing data engine is a databricks.  <br>
 Inside each module folder you will find deep analysis with IaC outputs and descriptions.
 
 <img src="docs/asset/img/dlake-v2.png" width="650" height="450"/>
