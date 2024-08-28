@@ -1,14 +1,14 @@
 # azure-dlake
-Data Plataform built on Azure provider.
+Data Plataform built on Azure provider with these modules.
 
+<img src="docs/asset/img/azure-dlake.gif" width="650" height="450"/>
 
-
-# Architecture: Big Picture
+# Architecture
 Below we have a big picture about data platform. <br>
 In this case we use a Delta Lake where backbone services deployed on azure and our processing data engine is a databricks.  <br>
 Inside each module folder you will find deep analysis with IaC outputs and descriptions.
 
-<img src="docs/asset/img/dlake-v2.png" width="650" height="450"/>
+<img src="docs/asset/img/0-bigpicture.png" width="650" height="450"/>
 
 ## Modules
 
