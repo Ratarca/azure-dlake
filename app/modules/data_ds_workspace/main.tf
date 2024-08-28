@@ -40,7 +40,6 @@ resource_group_name = azurerm_resource_group.ds_workspace_aml.name
 location = var.location
 account_tier = "Standard"
 account_replication_type = "LRS"  # Replace with "ZRS", "GRS", "RA-GRS", "GZRS", or "RA-GZRS" as needed
-account_kind = "StorageV2"
 
 # Enable the hierarchical namespace (required for ADLS Gen2)
 is_hns_enabled = true
