@@ -11,21 +11,22 @@ In this case we use a Delta Lake where backbone services deployed on azure and o
 
 ## Modules
 
+- data_sre_backbone : Scope, groups and RBAC. "Maybe i`ll write this on bicep because it has better integration than terraform"
 - data_storage: Account storage services.
-- data_de_adb : The data engineer's azure databricks services.
-- data_de_adf : Data engineer's azure data factory.
-- data_ds_labs: Data science's machine learning workspace.
-- data_sre_backbone : Scope, groups and RBAC.
+- data_ds_workspace: Data science's machine learning workspace.
+- data_de_adb : The data engineer's azure databricks services like workspace and unity catalog.
 
 
 ## Roadmap
 
-| Feature    | Description                                 | Status |
-| ---------- | ------------------------------------------- | ------ |
-| Services   | Infra to build a data plataform             | 0      |
-| Operations | Operations to execute routines on plataform | 0      |
-| DataOps    | CICD to deploy pipelines on databricks      | 0      |
-| MLOps      | CICD to deploy machine learning models      | 0      |
+| Feature    | Description                                 | Status      |
+| ---------- | ------------------------------------------- | ----------- |
+| Operations | CICD to deploy on azure                     | :full_moon: |
+| Services   | Infra: Backbone Scope                       | :new_moon:  |
+| Services   | Infra: Storage                              | :full_moon: |
+| Services   | Infra: Workspace                            | :full_moon: |
+| Services   | Infra: Databrick                            | :new_moon:  |
+| Operations | Operations to execute routines on plataform | :new_moon:  |
 
 
 ----
@@ -40,7 +41,7 @@ Instructions to deploy services
     - [Lake house](https://learn.microsoft.com/pt-br/azure/databricks/lakehouse/)
     - [Data Mesh](https://www.datamesh-architecture.com/#mesh)
     - [Data Mesh by Martin](https://martinfowler.com/articles/data-mesh-principles.html)
-    
+
 - Azure
     - [RBAC](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview)
     - [Network](https://learn.microsoft.com/en-us/azure/networking/fundamentals/networking-overview)
@@ -58,3 +59,7 @@ Instructions to deploy services
     - [Unity Catalog best practices](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/best-practices)
     - [Unity Catalog : Playlist dados em acao](https://www.youtube.com/watch?v=koylfcfRrJU&t=3s)
     - [Unity Project](https://github.com/unitycatalog/unitycatalog)
+
+# Related Projects
+DataOps: Using CICD to deploy databricks workflows
+MLOps: A ecosystem to create, maintain and distribute ML models.
