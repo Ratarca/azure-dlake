@@ -1,3 +1,10 @@
+resource "random_integer" "suffix" {
+  min = 10000000
+  max = 99999999
+}
+
+data "azurerm_client_config" "current" {}
+
 # Resource Group
 resource "azurerm_resource_group" "ds_workspace_aml"{
     name = "${var.env}-${var.company}-aml-station"
@@ -6,7 +13,7 @@ resource "azurerm_resource_group" "ds_workspace_aml"{
 
 # Application Insights
 resource "azurerm_application_insights" "aml_ai" {
-    name                = "${var.env}-${var.company}-${random_string.postfix.result}"
+    name                = "${var.env}-${var.company}-${random_string.suffix.result}"
     location            = azurerm_resource_group.ds_workspace_aml.location
     resource_group_name = azurerm_resource_group.ds_workspace_aml.name
     application_type    = "web"
@@ -14,7 +21,7 @@ resource "azurerm_application_insights" "aml_ai" {
 
 # Key Vault
 resource "azurerm_key_vault" "aml_kv" {
-    name                = "${var.env}-${var.company}-kv-${random_string.postfix.result}"
+    name                = "${var.env}-${var.company}-kv-${random_string.suffix.result}"
     location            = azurerm_resource_group.ds_workspace_aml.location
     resource_group_name = azurerm_resource_group.ds_workspace_aml.name
     tenant_id           = data.azurerm_client_config.current.tenant_id
@@ -36,7 +43,7 @@ is_hns_enabled = true
 
 # Container Registry
 resource "azurerm_container_registry" "aml_acr" {
-    name                     = "${var.env}-acr-${random_string.postfix.result}"
+    name                     = "${var.env}-acr-${random_string.suffix.result}"
     resource_group_name      = azurerm_resource_group.ds_workspace_aml.name
     location                 = azurerm_resource_group.ds_workspace_aml.location
     sku                      = "Standard"
@@ -45,7 +52,7 @@ resource "azurerm_container_registry" "aml_acr" {
 
 # ML Workspace
 resource "azurerm_machine_learning_workspace" "aml_ws" {
-    name                    = "${var.env}-${var.company}-ws-${random_string.postfix.result}"
+    name                    = "${var.env}-${var.company}-ws-${random_string.suffix.result}"
     friendly_name           = "${var.env}-${var.company}-ws-models"
     location                = azurerm_resource_group.ds_workspace_aml.location
     resource_group_name     = azurerm_resource_group.ds_workspace_aml.name
