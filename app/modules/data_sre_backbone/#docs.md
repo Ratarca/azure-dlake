@@ -33,4 +33,4 @@ module "azure_management_structure" {
 
 ---
 
-# [Home](https://github.com/Ratarca/azure-dlake/tree/main)
+# [Home :house:](https://github.com/Ratarca/azure-dlake)

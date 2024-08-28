@@ -7,9 +7,6 @@
 - Databricks Unity Catalog
 - Standard : Resources dont required admin privileges like 
 
----
-
-# [Home](https://github.com/Ratarca/azure-dlake/tree/main)
 
 ---
 
@@ -17,3 +14,6 @@
 - https://registry.terraform.io/providers/databricks/databricks/latest/docs/guides/workspace-management
 - https://github.com/databricks/terraform-databricks-examples
 
+---
+
+# [Home :house:](https://github.com/Ratarca/azure-dlake)

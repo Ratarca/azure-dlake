@@ -23,13 +23,13 @@ We can add a VNet with private link to another people acess and use firewall.
 
 ---
 
-# [Home](https://github.com/Ratarca/azure-dlake/tree/main)
-
----
-
 ## References
 - https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/machine_learning_workspace.html
 - https://learn.microsoft.com/en-us/azure/machine-learning/quickstart-create-resources?view=azureml-api-2
 - https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-explore-data?view=azureml-api-2
 - https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-management-and-deployment?view=azureml-api-2
 - https://learn.microsoft.com/en-us/azure/machine-learning/concept-component?view=azureml-api-2
+
+---
+
+# [Home :house:](https://github.com/Ratarca/azure-dlake)
