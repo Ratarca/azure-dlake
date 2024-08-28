@@ -19,14 +19,14 @@ In this case we use a Delta Lake where backbone services deployed on azure and o
 
 ## Roadmap
 
-| Feature    | Description                                 | Status      |
-| ---------- | ------------------------------------------- | ----------- |
-| Operations | CICD to deploy on azure                     | :full_moon: |
-| Services   | Infra: Backbone Scope                       | :new_moon:  |
-| Services   | Infra: Storage                              | :full_moon: |
-| Services   | Infra: Workspace                            | :full_moon: |
-| Services   | Infra: Databrick                            | :new_moon:  |
-| Operations | Operations to execute routines on plataform | :new_moon:  |
+| Feature    | Description                                 | Status              |
+| ---------- | ------------------------------------------- | ------------------- |
+| Operations | CICD to deploy on azure                     | :full_moon:         |
+| Services   | Infra: Backbone Scope                       | :new_moon:          |
+| Services   | Infra: Storage                              | :full_moon:         |
+| Services   | Infra: ML Workspace                         | :full_moon:         |
+| Services   | Infra: Databrick                            | :last_quarter_moon: |
+| Operations | Operations to execute routines on plataform | :new_moon:          |
 
 
 ----
