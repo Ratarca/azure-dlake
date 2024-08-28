@@ -2,19 +2,20 @@
 Data Plataform built on Azure provider.
 
 
-## Architecture
-Below we have a big picture about data platform. 
-In this case we use a Delta Lake where backbone services deployed on azure and our processing data engine is a databricks data platform.
+
+# Architecture: Big Picture
+Below we have a big picture about data platform. <br>
+In this case we use a Delta Lake where backbone services deployed on azure and our processing data engine is a databricks data platform.  <br>
+Inside each module folder you will find deep analysis with IaC outputs and descriptions.
 
 <img src="docs/asset/img/dlake-v2.png" width="650" height="450"/>
 
-
 ## Modules
 
-- data_sre_backbone : Scope, groups and RBAC. "Maybe i`ll write this on bicep because it has better integration than terraform"
-- data_storage: Account storage services.
-- data_ds_workspace: Data science's machine learning workspace.
-- data_de_adb : The data engineer's azure databricks services like workspace and unity catalog.
+- [data_sre_backbone]() : Scope, groups and RBAC. "Maybe i`ll write this on bicep because it has better integration than terraform"
+- [data_storage](): Account storage services.
+- [data_ds_workspace](): Data science's machine learning workspace.
+- [data_de_adb]() : The data engineer's azure databricks services like workspace and unity catalog.
 
 
 ## Roadmap
