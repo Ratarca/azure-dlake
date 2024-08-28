@@ -6,6 +6,8 @@ resource "random_integer" "suffix" {
 resource "random_string" "posfix" {
   length = 4
   lower  = true
+  special = false
+  numeric = false
 }
 
 data "azurerm_client_config" "current" {}

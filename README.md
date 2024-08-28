@@ -60,6 +60,10 @@ Instructions to deploy services
     - [Unity Catalog best practices](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/best-practices)
     - [Unity Catalog : Playlist dados em acao](https://www.youtube.com/watch?v=koylfcfRrJU&t=3s)
     - [Unity Project](https://github.com/unitycatalog/unitycatalog)
+- Good Practices
+    - [Data Factory Operations with one Linked Service](https://medium.com/plumbersofdatascience/azure-data-factory-connect-to-multiple-resources-with-one-linked-service-47310423aba6)
+    - [Data Factory CI-CD](https://learn.microsoft.com/en-us/azure/data-factory/continuous-integration-delivery)
+    - [Guide to implement Data Factory](https://mrpaulandrew.com/2019/12/18/best-practices-for-implementing-azure-data-factory/)
 
 # Related Projects
 DataOps: Using CICD to deploy databricks workflows

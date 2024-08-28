@@ -29,7 +29,7 @@ We can add a VNet with private link to another people acess and use firewall.
 - https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-explore-data?view=azureml-api-2
 - https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-management-and-deployment?view=azureml-api-2
 - https://learn.microsoft.com/en-us/azure/machine-learning/concept-component?view=azureml-api-2
-
+- [Example Usage with User Assigned Identity and Data Encryption](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/machine_learning_workspace#example-usage-with-user-assigned-identity-and-data-encryption)
 ---
 
 # [Home :house:](https://github.com/Ratarca/azure-dlake)
