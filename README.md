@@ -36,6 +36,12 @@ Inside each module folder you will find deep analysis with IaC outputs and descr
 
 Instructions to deploy services
 
+```hcl
+
+ADD INSTRUCTIONS HERE...
+
+```
+
 ## Reference
 
 - Architecture
