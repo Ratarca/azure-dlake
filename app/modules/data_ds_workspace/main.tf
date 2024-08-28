@@ -22,6 +22,17 @@ resource "azurerm_key_vault" "aml_kv" {
 }
 
 # Storage: Account & Containers
+resource "azurerm_storage_account" "aml_storage"{
+name = "${var.company}models"
+resource_group_name = azurerm_resource_group.ds_workspace_aml.name
+location = var.location
+account_tier = "Standard"
+account_replication_type = "LRS"  # Replace with "ZRS", "GRS", "RA-GRS", "GZRS", or "RA-GZRS" as needed
+account_kind = "StorageV2"
+
+# Enable the hierarchical namespace (required for ADLS Gen2)
+is_hns_enabled = true
+}
 
 # Container Registry
 resource "azurerm_container_registry" "aml_acr" {
@@ -35,25 +46,15 @@ resource "azurerm_container_registry" "aml_acr" {
 # ML Workspace
 resource "azurerm_machine_learning_workspace" "aml_ws" {
     name                    = "${var.env}-${var.company}-ws-${random_string.postfix.result}"
-    friendly_name           = 0 #var.workspace_display_name
+    friendly_name           = "${var.env}-${var.company}-ws-models"
     location                = azurerm_resource_group.ds_workspace_aml.location
     resource_group_name     = azurerm_resource_group.ds_workspace_aml.name
     application_insights_id = azurerm_application_insights.aml_ai.id
     key_vault_id            = azurerm_key_vault.aml_kv.id
-    storage_account_id      = 0 #azurerm_storage_account.aml_sa.id
+    storage_account_id      = azurerm_storage_account.aml_storage.id
     container_registry_id   = azurerm_container_registry.aml_acr.id
 
     identity {
         type = "SystemAssigned"
     }
-}
-
-resource "null_resource" "compute_resouces"{
-    provisioner "local-exec" {
-    command="az ml computetarget create amlcompute --max-nodes 1 --min-nodes 0 --name cpu-cluster --vm-size Standard_DS3_v2 --idle-seconds-before-scaledown 600 --assign-identity [system] --resource-group ${azurerm_machine_learning_workspace.aml_ws.resource_group_name} --workspace-name ${azurerm_machine_learning_workspace.aml_ws.name}"
-}
-
-    provisioner "local-exec" {
-    command="az ml computetarget create computeinstance --name ci-${random_string.postfix.result}-test --vm-size Standard_DS3_v2 --resource-group ${azurerm_machine_learning_workspace.aml_ws.resource_group_name} --workspace-name ${azurerm_machine_learning_workspace.aml_ws.name}"
-}
 }
