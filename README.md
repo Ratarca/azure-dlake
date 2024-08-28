@@ -38,4 +38,10 @@ In this case we use a Delta Lake where backbone services deployed on azure and o
 - [Workflow git actions TF V3](https://github.com/hashicorp/setup-terraform/tree/v3/)
 
 ## Reference
-- [Unity Catalog best practices](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/best-practices)
+
+
+- Unity Catalog
+    - [Unity Setup](https://docs.databricks.com/en/data-governance/unity-catalog/get-started.html)
+    - [Unity Catalog best practices](https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/best-practices)
+    - [Unity Catalog : Playlist dados em acao](https://www.youtube.com/watch?v=koylfcfRrJU&t=3s)
+    - [Unity Project](https://github.com/unitycatalog/unitycatalog)
