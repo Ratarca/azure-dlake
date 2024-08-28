@@ -12,7 +12,7 @@ Inside each module folder you will find deep analysis with IaC outputs and descr
 
 ## Modules
 
-- [data_sre_backbone](https://github.com/Ratarca/azure-dlake/tree/main/app/modules/data_sre_scope): Scope, groups and RBAC. "Maybe i`ll write this on bicep because it has better integration than terraform"
+- [data_sre_backbone](https://github.com/Ratarca/azure-dlake/tree/main/app/modules/data_sre_backbone): Scope, groups and RBAC. "Maybe i`ll write this on bicep because it has better integration than terraform"
 - [data_storage](https://github.com/Ratarca/azure-dlake/tree/main/app/modules/data_storage): Account storage services.
 - [data_ds_workspace](https://github.com/Ratarca/azure-dlake/tree/main/app/modules/data_ds_workspace): Data science's machine learning workspace.
 - [data_de_adb](https://github.com/Ratarca/azure-dlake/tree/main/app/modules/data_de_adb) : The data engineer's azure databricks services like workspace and unity catalog.
