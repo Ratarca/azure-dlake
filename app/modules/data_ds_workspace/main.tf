@@ -48,7 +48,7 @@ is_hns_enabled = true
 
 # Container Registry
 resource "azurerm_container_registry" "aml_acr" {
-    name                     = "${var.env}-acr-${random_string.posfix.result}"
+    name                     = "${var.env}acr${random_string.posfix.result}"
     resource_group_name      = azurerm_resource_group.ds_workspace_aml.name
     location                 = azurerm_resource_group.ds_workspace_aml.location
     sku                      = "Standard"
