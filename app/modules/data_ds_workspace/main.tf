@@ -3,6 +3,11 @@ resource "random_integer" "suffix" {
   max = 99999999
 }
 
+resource "random_string" "posfix" {
+  length = 4
+  lower  = true
+}
+
 data "azurerm_client_config" "current" {}
 
 # Resource Group
@@ -30,7 +35,7 @@ resource "azurerm_key_vault" "aml_kv" {
 
 # Storage: Account & Containers
 resource "azurerm_storage_account" "aml_storage"{
-name = "${var.company}models"
+name = "${var.company}modelsws"
 resource_group_name = azurerm_resource_group.ds_workspace_aml.name
 location = var.location
 account_tier = "Standard"
@@ -43,7 +48,7 @@ is_hns_enabled = true
 
 # Container Registry
 resource "azurerm_container_registry" "aml_acr" {
-    name                     = "${var.env}-acr-${random_integer.suffix.result}"
+    name                     = "${var.env}-acr-${random_string.posfix.result}"
     resource_group_name      = azurerm_resource_group.ds_workspace_aml.name
     location                 = azurerm_resource_group.ds_workspace_aml.location
     sku                      = "Standard"
@@ -52,7 +57,7 @@ resource "azurerm_container_registry" "aml_acr" {
 
 # ML Workspace
 resource "azurerm_machine_learning_workspace" "aml_ws" {
-    name                    = "${var.env}-${var.company}-ws-${random_integer.suffix.result}"
+    name                    = "${var.env}-${var.company}-ws-${random_string.posfix.result}"
     friendly_name           = "${var.env}-${var.company}-ws-models"
     location                = azurerm_resource_group.ds_workspace_aml.location
     resource_group_name     = azurerm_resource_group.ds_workspace_aml.name
