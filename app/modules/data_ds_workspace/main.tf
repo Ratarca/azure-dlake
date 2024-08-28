@@ -41,8 +41,8 @@ location = var.location
 account_tier = "Standard"
 account_replication_type = "LRS"  # Replace with "ZRS", "GRS", "RA-GRS", "GZRS", or "RA-GZRS" as needed
 
-# Enable the hierarchical namespace (required for ADLS Gen2)
-is_hns_enabled = true
+
+is_hns_enabled = false
 }
 
 # Container Registry
