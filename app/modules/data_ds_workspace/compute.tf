@@ -7,7 +7,7 @@ resource "random_string" "ci_prefix" {
 
 # Compute instance
 resource "azurerm_machine_learning_compute_instance" "ml_computing_main" {
-  name                          = "${random_string.ci_prefix.result}instance"
+  name                          = "${random_string.ci_prefix.result}-ml-instance"
   machine_learning_workspace_id = azurerm_machine_learning_workspace.aml_ws.id
   virtual_machine_size          = "STANDARD_DS2_V2"
   location = var.location
