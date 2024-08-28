@@ -7,7 +7,7 @@ variable "env"{
 variable "company"{
     description = "value"
     type = string
-    default = "dev"
+    default = "wonka"
 }
 
 variable "location"{

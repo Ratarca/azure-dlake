@@ -17,7 +17,7 @@ resource "azurerm_machine_learning_compute_instance" "ml_computing_main" {
 
 # Compute Cluster
 resource "azurerm_machine_learning_compute_cluster" "ml_computing_cluster" {
-  name                          = "cpu-cluster"
+  name                          = "cpu-cluster-ml"
   location                      = var.location
   machine_learning_workspace_id = azurerm_machine_learning_workspace.aml_ws.id
   vm_priority                   = "LowPriority"
