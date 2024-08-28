@@ -39,6 +39,8 @@ Instructions to deploy services
 - Architecture
     - [Lake house](https://learn.microsoft.com/pt-br/azure/databricks/lakehouse/)
     - [Data Mesh](https://www.datamesh-architecture.com/#mesh)
+    - [Data Mesh by Martin](https://martinfowler.com/articles/data-mesh-principles.html)
+    
 - Azure
     - [RBAC](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview)
     - [Network](https://learn.microsoft.com/en-us/azure/networking/fundamentals/networking-overview)
