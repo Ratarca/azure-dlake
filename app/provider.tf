@@ -11,6 +11,7 @@ provider "azurerm" {
     }
 }
 
+
 # Set the Azure Provider source and version being used
 terraform {
     required_version = ">= 1.1.7"

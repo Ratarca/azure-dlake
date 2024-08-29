@@ -5,6 +5,7 @@ resource "random_string" "ci_prefix" {
   numeric = false
 }
 
+/*
 # Compute instance
 resource "azurerm_machine_learning_compute_instance" "ml_computing_main" {
   name                          = "${random_string.ci_prefix.result}-ml-instance"
@@ -15,6 +16,8 @@ resource "azurerm_machine_learning_compute_instance" "ml_computing_main" {
   # subnet_resource_id --> need azurerm_virtual_network + azurerm_subnet
   # ssh
 }
+*/
+
 
 # Compute Cluster
 resource "azurerm_machine_learning_compute_cluster" "ml_computing_cluster" {
